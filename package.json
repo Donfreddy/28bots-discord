@@ -1,0 +1,31 @@
+{
+  "name": "28bots",
+  "version": "1.0.0",
+  "description": "Bot discord",
+  "main": "bot.js",
+  "author": "dfreddy",
+  "license": "MIT",
+  "scripts": {
+    "start": "node bot.js",
+    "start:dev": "nodemon bot.js",
+    "lint": "eslint bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "12.5.3",
+    "discord.js-commando": "https://github.com/discordjs/Commando.git",
+    "discord.js-pagination": "^1.0.3",
+    "dotenv": "^10.0.0",
+    "got": "^11.8.2",
+    "moment": "^2.29.1",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3",
+    "ytdl-core": "^4.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}

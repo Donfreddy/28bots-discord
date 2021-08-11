@@ -1,0 +1,14 @@
+{
+  "bot": {
+    "name": "28bots",
+    "token": "<use environment variable TOKEN>",
+    "owner": ["464284373429256193"],
+    "default_prefix": "?",
+    "activity_text": "?help | 28bots.com",
+    "activity_type": "WATCHING"
+  },
+  "youtube": {
+    "token": "<use environment variable TOKEN>",
+    "base_url": "https://www.youtube.com"
+  }
+}
