@@ -48,5 +48,9 @@ module.exports = class BotClient extends CommandoClient {
         }.`,
       ),
     );
+    function name(params) {
+      //
+    }
   }
+
 };

@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 const { stripIndents, oneLine } = require('common-tags');
 const { disambiguation } = require('discord.js-commando/src/util');
 const { Command } = require('discord.js-commando');
@@ -15,7 +16,7 @@ module.exports = class HelpCommand extends Command {
       args: [
         {
           key: 'command',
-          prompt: 'Pour quelle commande voulez-vous de l\'aide ?',
+          prompt: "Pour quelle commande voulez-vous de l'aide ?",
           type: 'string',
           default: '',
         },
@@ -24,7 +25,6 @@ module.exports = class HelpCommand extends Command {
   }
 
   async run(msg, args) {
-    // eslint-disable-line complexity
     const groups = this.client.registry.groups;
     const commands = this.client.registry.findCommands(args.command, false, msg);
     const showAll = args.command && args.command.toLowerCase() === 'all';
@@ -61,7 +61,7 @@ module.exports = class HelpCommand extends Command {
           .setDescription(help.replace(/ or /g, ' ou '));
       } else if (commands.length > 15) {
         embed.setDescription(
-          'Plusieurs commandes peuvent correspondrent, merci d\'être plus précis.',
+          "Plusieurs commandes peuvent correspondrent, merci d'être plus précis.",
         );
       } else if (commands.length > 1) {
         embed.setDescription(disambiguation(commands, 'commands').replace(/ or /g, ' ou '));
