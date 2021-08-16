@@ -1,7 +1,8 @@
 const { bot } = require('../config.json');
+const { client } = require('..');
 
 module.exports = {
-  run: (client) => {
+  run: () => {
     client.logger.log('info', `Bot identifié en tant que ${client.user.tag}! (${client.user.id})`);
 
     const updateActivity = () => {

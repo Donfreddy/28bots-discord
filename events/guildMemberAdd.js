@@ -1,5 +1,15 @@
+const { CommandoGuild } = require('discord.js-commando');
+const { client } = require('..');
+
 module.exports = {
-  run: (client) => {
-    client.logger.log('info', 'Je vien du fichier add new member');
+  /**
+   *
+   * @param {CommandoGuild} member
+   */
+  run: (member) => {
+    client.logger.log('Wellcome'+ member.displayName);
+    if (member) return;
+
+    return;
   },
 };

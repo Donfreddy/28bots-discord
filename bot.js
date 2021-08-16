@@ -73,3 +73,5 @@ client.registry
 
 // login to Discord with your app's token
 client.login(config.bot.token);
+
+module.exports = { client };
